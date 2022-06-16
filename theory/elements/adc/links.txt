@@ -1,0 +1,2 @@
+ad9051brsz      60 Msps     10 bit
+ad6645asq-105   105 Msps    14bit
