@@ -1,0 +1,10 @@
+1
+9
+.tran 1m 10000m{return}{return}
+2
+1
+Net-(C1-Pad1)
+V
+1
+out
+V

@@ -1,0 +1,7 @@
+1
+9
+.tran 100n 50m{return}{return}
+1
+1
+out_voltage
+V

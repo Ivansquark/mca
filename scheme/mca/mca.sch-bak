@@ -1,7 +1,7 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A3 16535 11693
+$Descr A3 11693 16535 portrait
 encoding utf-8
 Sheet 1 1
 Title ""
@@ -154,7 +154,7 @@ F 3 "~" H 3900 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7300 6000 7300 5700
+	7300 6000 7300 5800
 Wire Wire Line
 	3650 4500 3800 4500
 Wire Wire Line
@@ -218,15 +218,84 @@ Wire Wire Line
 	3900 5600 3900 6000
 Wire Wire Line
 	3900 6350 3900 6300
+Wire Wire Line
+	5950 4500 5950 6200
+Wire Wire Line
+	5950 6200 7700 6200
+Wire Wire Line
+	7700 6200 7700 5700
+Wire Wire Line
+	7700 5700 8050 5700
+Wire Wire Line
+	4800 5500 4800 6350
+Wire Wire Line
+	4800 6350 7800 6350
+Wire Wire Line
+	7800 6350 7800 5800
+Wire Wire Line
+	7800 5800 8050 5800
+Wire Wire Line
+	6900 3900 6800 3900
+Wire Wire Line
+	6800 3900 6800 3300
+Wire Wire Line
+	6800 3300 7900 3300
+Wire Wire Line
+	7900 3300 7900 3700
+Wire Wire Line
+	7900 3700 8050 3700
 $Comp
-L FPGA_Xilinx_Spartan6:XC6SLX4-CPG196 U?
-U 1 1 62AEA722
-P 10050 4400
-F 0 "U?" H 10050 2625 50  0000 C CNN
-F 1 "XC6SLX4-CPG196" H 10050 2534 50  0000 C CNN
-F 2 "" H 10050 4400 50  0001 C CNN
-F 3 "" H 10050 4400 50  0000 C CNN
-	1    10050 4400
+L Device:C C?
+U 1 1 62AFC302
+P 6850 5650
+F 0 "C?" H 6965 5696 50  0000 L CNN
+F 1 "C" H 6965 5605 50  0000 L CNN
+F 2 "" H 6888 5500 50  0001 C CNN
+F 3 "~" H 6850 5650 50  0001 C CNN
+	1    6850 5650
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C C?
+U 1 1 62AFD0A8
+P 6550 5650
+F 0 "C?" H 6665 5696 50  0000 L CNN
+F 1 "C" H 6665 5605 50  0000 L CNN
+F 2 "" H 6588 5500 50  0001 C CNN
+F 3 "~" H 6550 5650 50  0001 C CNN
+	1    6550 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 62AFE24E
+P 6900 4200
+F 0 "#PWR?" H 6900 3950 50  0001 C CNN
+F 1 "Earth" H 6900 4050 50  0001 C CNN
+F 2 "" H 6900 4200 50  0001 C CNN
+F 3 "~" H 6900 4200 50  0001 C CNN
+	1    6900 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4800 6400 4800
+Wire Wire Line
+	6400 4800 6400 5800
+Wire Wire Line
+	6400 5800 6550 5800
+Wire Wire Line
+	6850 5800 6550 5800
+Connection ~ 6550 5800
+Wire Wire Line
+	6850 5800 7300 5800
+Connection ~ 6850 5800
+Connection ~ 7300 5800
+Wire Wire Line
+	7300 5800 7300 5700
+Wire Wire Line
+	6900 5500 6850 5500
+Wire Wire Line
+	6550 5500 6550 5300
+Wire Wire Line
+	6550 5300 6900 5300
 $EndSCHEMATC
