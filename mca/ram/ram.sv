@@ -10,7 +10,7 @@ module ram #(
     output logic [(N-1):0] r_data
 );
 
-logic [((N/4)-1):0][7:0] mem[0 : 1023];
+logic [((N/8)-1):0][7:0] mem[0 : 1023];
 logic [9:0]addr_temp;
 logic [(N-1):0] ram_val;
 integer i;
